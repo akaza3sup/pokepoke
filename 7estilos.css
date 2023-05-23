@@ -1,0 +1,1739 @@
+@font-face {
+    font-family: mifuente;
+    src: url(fuentemi/Heavitas.ttf);
+}
+
+
+header{
+    margin: 0;
+    background-color:rgba(238, 255, 0, 0.938);
+    width: 100%;
+    height: 70px;
+    position:relative;
+    z-index: 100%;
+    font-family: mifuente ;  
+    
+} 
+nav{
+    float: center;
+    list-style: none;
+    overflow: hidden;
+}
+.logo{
+    float:left;
+   width: 100px;
+   height: 60px;
+}
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+nav ul li {
+    float:left;
+    font-size: 20px;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+
+}
+nav ul li:hover{
+    background: rgb(129, 126, 126);
+}
+
+    
+    .face{
+        float:right;
+        width: 40px;
+        height: 40px;
+        padding: 13px;
+        position: relative;
+        top: -80px;
+        left: px;
+        }
+    
+        .git{
+        float:right;
+        width: 40px;
+        height: 40px;
+        padding: 13px;
+        position: relative;
+        top: -80px;
+        left: -10px;
+        }
+        .c{
+            font-family: mifuente;
+            position: relative;
+            top:70px;
+            left:200px;
+        }
+    .fondo{
+        position: relative;
+        top:45px;
+        left: 300px;
+        width:500px ;
+        height:400px ;
+    }
+    .d{
+        font-family: mifuente;
+        position: relative;
+        top:-300px;
+        left:350px;
+    }
+
+    body{
+        background-color:rgb(27, 27, 27);
+        width: 100%;
+        height:100%; 
+        flex-wrap: wrap;}
+
+/*------------------------------------------*/
+.card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgba(66, 119, 137, 0.947);
+}
+
+.card .front img{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:linear-gradient(45deg, #83aca5 ,#2db396);
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:linear-gradient(to bottom,#419b9b ,#4e9185) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.card .back .link a{
+    color:#f3f3f3;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+/*    --------------------------------------*/
+.segunda .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.segunda .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.segunda .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.segunda .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.segunda .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(97, 165, 255);
+}
+
+.segunda .card .front img{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+
+}
+.segunda .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:rgb(255, 255, 255);
+    background:rgb(24, 217, 235);
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.segunda .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:rgb(28, 194, 239)w  ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.segunda .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.segunda .card .back .link a{
+    color:#f3f3f3;
+}
+.segunda .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.segunda .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/*---------------------------3-------------------------------*/
+.tercera .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.tercera .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.tercera .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.tercera .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.tercera .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(17, 101, 245);
+}
+
+.tercera .card .front img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.tercera .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:#06c6f1;
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.tercera .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:#0464a0  ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.tercera .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.tercera .card .back .link a{
+    color:#f3f3f3;
+}
+.tercera .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.tercera .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/*-------------------------4-----------------------------*/
+.cuarto .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.cuarto .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.cuarto .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.cuarto .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.cuarto .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(60, 0, 255);
+}
+
+.cuarto .card .front img{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.cuarto .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:rgb(63, 4, 98);
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.cuarto .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:rgb(64, 20, 126) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.cuarto .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.cuarto .card .back .link a{
+    color:#f3f3f3;
+}
+.cuarto .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.cuarto .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/*------------------------5---------------------------*/
+
+.quinto .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.quinto .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.quinto .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.quinto .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.quinto .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(128, 128, 76);
+}
+
+.quinto .card .front img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.quinto .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: linear-gradient(to bottom, #65593d, #7ff6ff) ;
+    text-align: center ;
+    font-family: mifuente;
+}
+.quinto .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:linear-gradient(45deg, #d6af4b, #6b5c2d) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.quinto .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.quinto .card .back .link a{
+    color:#f3f3f3;
+}
+.quinto .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.quinto .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/* ------------------6-----------------------------------*/
+.sexto .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.sexto .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.sexto .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.sexto .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.sexto .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(253, 134, 255);
+}
+
+.sexto .card .front img{
+    position:relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.sexto .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: #e54fdb;
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.sexto .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #d68edc  ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.sexto .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.sexto .card .back .link a{
+    color:#f3f3f3;
+}
+.sexto .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.sexto .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);  }
+/*----------------------------7---------------------*/
+.septi .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.septi .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.septi .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.septi .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.septi .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(54, 174, 18);
+}
+
+.septi .card .front img{
+    position:relative;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.septi .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:rgb(51, 156, 12);
+    text-align: center ;
+    font-family: mifuente;
+}
+
+.septi .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:rgb(109, 204, 13) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.septi .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.septi .card .back .link a{
+    color:#f3f3f3;
+}
+.septi .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.septi .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);  }
+/*-----------------8---------------------------------*/
+.octavo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.octavo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.octavo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.octavo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.octavo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(104, 79, 57);
+}
+
+.octavo .card .front img{
+    position:relative;
+    width: 70%;
+    height:70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.octavo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:linear-gradient(to bottom,#614630, #787478) ;
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.octavo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:linear-gradient(to bottom,#989898, #664331)  ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.octavo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.octavo .card .back .link a{
+    color:#f3f3f3;
+}
+.octavo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.octavo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);  }
+/*---------------------9-----------------------------*/
+.noveno .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.noveno .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.noveno .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.noveno .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.noveno .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(255, 89, 0);
+}
+
+.noveno .card .front img{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.noveno .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:  #ff5500;
+    text-align: center ;
+    font-family: mifuente;
+}
+.noveno .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:  #ff5500;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.noveno .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.noveno .card .back .link a{
+    color:#f3f3f3;
+}
+.noveno .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.noveno .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/*------------------10-----------------*/
+.decimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.decimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.decimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.decimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.decimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(6, 74, 41);
+}
+
+.decimo .card .front img{
+    position:relative;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.decimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: #03551f;
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.decimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #034a2a;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.decimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.decimo .card .back .link a{
+    color:#f3f3f3;
+}
+.decimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.decimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);  }
+/*-----------------------11-----------------------------*/
+.unodecimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.unodecimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.unodecimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.unodecimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.unodecimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(238, 255, 2);
+}
+
+.unodecimo .card .front img{
+    position:relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 30px;
+    top: 50px;
+
+}
+.unodecimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: #e5e80c;
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.unodecimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: hsl(59, 91%, 44%) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.unodecimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.unodecimo .card .back .link a{
+    color:#f3f3f3;
+}
+.unodecimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.unodecimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);  }
+/*------------------------12-----------------------------*/
+.dudecimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.dudecimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.dudecimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.dudecimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.dudecimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(149, 149, 149);
+}
+
+.dudecimo .card .front img{
+    position:relative;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.dudecimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:#c0f3aa;
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.dudecimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:#98ebb5;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.dudecimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.dudecimo .card .back .link a{
+    color:#f3f3f3;
+}
+.dudecimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.dudecimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);  }
+/*----------------------------13----------------------*/
+
+.tridecimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.tridecimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.tridecimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.tridecimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.tridecimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(102, 93, 51);
+}
+
+.tridecimo .card .front img{
+    position: relative;
+    width:  70%;
+    height: 70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.tridecimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:linear-gradient(45deg,#50bda3, #5f5d33);
+    text-align: center ;
+    font-family: mifuente;
+}
+.tridecimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:linear-gradient(to bottom,#6d6537, #71dacc) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.tridecimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.tridecimo .card .back .link a{
+    color:#f3f3f3;
+}
+.tridecimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.tridecimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/*---------------------------14-----------------------*/
+.cudecimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.cudecimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.cudecimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.cudecimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.cudecimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(14, 69, 4);
+}
+
+.cudecimo .card .front img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 40px;
+    top: 50px;
+
+}
+.cudecimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: #788b23 ;
+    text-align: center ;
+    font-family: mifuente;
+}
+.cudecimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #909334 ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.cudecimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.cudecimo .card .back .link a{
+    color:#f3f3f3;
+}
+.cudecimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.cudecimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg); }
+    /*-------------------15--------------------------*/
+    .quindecimo .card *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        font-family: mifuente;
+    }
+    .quindecimo .carta body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        
+    }
+    .quindecimo .card{
+        position: relative;
+        margin: 100px;
+        width: 300px;
+        height: 350px;
+        top:150px;
+        left: 300px;
+    }
+    .quindecimo .card .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius:10px ;
+        overflow: hidden;
+        transition: .5s;
+    }
+    
+    .quindecimo .card .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px rgba(235, 167, 243, 0.88);
+    }
+    
+    .quindecimo .card .front img{
+        position:relative;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        left: 50px;
+        top: 50px;
+    
+    }
+    .quindecimo .card .front h3{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        color:#fff;
+        background:linear-gradient(to bottom,#a8ada9, #b55ec5);
+        text-align: center ;
+        font-family: mifuente;
+    }
+    
+    
+    .quindecimo .card .back{
+        transform: perspective(600px) rotateY(180deg);
+        background:linear-gradient(45deg,#b4dcd9, #d075d5) ;
+        padding: 15px;
+        color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5px 10px #fffdfd;
+        font-family: mifuente;
+    
+    }
+    .quindecimo .card .back .link{
+        border-top: solid 1px #f3f3f3 ;
+        height: 50px;
+        line-height: 50px;
+        font-family: mifuente;
+    }
+    .quindecimo .card .back .link a{
+        color:#f3f3f3;
+    }
+    .quindecimo .card:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    
+    .quindecimo .card:hover .back{
+        transform: perspective(600px) rotateY(360deg);  }
+/*----------------------16--------------------------*/
+.sexdecimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.sexdecimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.sexdecimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.sexdecimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.sexdecimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(246, 255, 0);
+}
+
+.sexdecimo .card .front img{
+    position:relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.sexdecimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background: #ffea03;
+    text-align: center ;
+    font-family: mifuente;
+}
+
+
+.sexdecimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #e3f306;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.sexdecimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.sexdecimo .card .back .link a{
+    color:#f3f3f3;
+}
+.sexdecimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.sexdecimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);  }
+/*-------------------------17--------------------------*/
+.sectdecimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.sectdecimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.sectdecimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.sectdecimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.sectdecimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(183, 183, 180);
+}
+
+.sectdecimo .card .front img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.sectdecimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:linear-gradient(45deg,#bababa, #8fd0bd ,#b07e7a, #a4d794 ,#b176df) ;
+    text-align: center ;
+    font-family: mifuente;
+}
+.sectdecimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:linear-gradient(to bottom,#f59235, #c884f8,#dd7d7df6,#95ffcf,#bdbdbb ) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.sectdecimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.sectdecimo .card .back .link a{
+    color:#f3f3f3;
+}
+.sectdecimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.sectdecimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg); }
+/*----------------------18---------------------------------*/
+.octadecimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.octadecimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.octadecimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.octadecimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.octadecimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(240, 72, 255);
+}
+
+.octadecimo .card .front img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.octadecimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:linear-gradient(45deg,#878787, #eb5ffe);
+    text-align: center ;
+    font-family: mifuente;
+}
+.octadecimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:linear-gradient(45deg,#878787, #ff69fd);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.octadecimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.octadecimo .card .back .link a{
+    color:#f3f3f3;
+}
+.octadecimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.octadecimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg); }
+/*-------------------------19-----------------------*/
+.novedecimo .card *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: mifuente;
+}
+.novedecimo .carta body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.novedecimo .card{
+    position: relative;
+    margin: 100px;
+    width: 300px;
+    height: 350px;
+    top:150px;
+    left: 300px;
+}
+.novedecimo .card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius:10px ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.novedecimo .card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(255, 163, 15);
+}
+
+.novedecimo .card .front img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    left: 50px;
+    top: 50px;
+
+}
+.novedecimo .card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color:#fff;
+    background:rgb(255, 190, 12) ;
+    text-align: center ;
+    font-family: mifuente;
+}
+.novedecimo .card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background:rgb(253, 149, 12) ;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #fffdfd;
+    font-family: mifuente;
+
+}
+.novedecimo .card .back .link{
+    border-top: solid 1px #f3f3f3 ;
+    height: 50px;
+    line-height: 50px;
+    font-family: mifuente;
+}
+.novedecimo .card .back .link a{
+    color:#f3f3f3;
+}
+.novedecimo .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.novedecimo .card:hover .back{
+    transform: perspective(600px) rotateY(360deg); }
+/* ----------------------sigiuente-------------------*/
+.bottom2{
+    position: relative;
+    top:10px ;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+}
+.boton{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top:-20px ;
+    left: 700px; 
+}
+.siguiente{
+font-family: mifuente;
+position: relative;
+top:20px ;
+left: 700px;
+}
+.botontwo{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top:-200px ;
+    left: 350px;   
+}
+.atras{
+    font-family: mifuente;
+    position: relative;
+    top:-20px ;
+    left: 350px; 
+}
